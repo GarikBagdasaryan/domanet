@@ -1,0 +1,526 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+body {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #fff;
+    position: relative;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+}
+:root.light-theme {
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.upper-btn {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 75px;
+    height: 75px;
+    transition: all 0.4s;
+}
+.btn-upper-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+    color: rgb(225, 225, 225, 1);
+    column-gap: 60px;
+    padding-top: 3%;
+}
+.siteTitle {
+    font-family: "Manrope", sans-serif;
+    font-size: 128px;
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    padding-top: 4%;
+}
+.subtitle {
+    font-family: "Manrope", sans-serif;
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    padding-top: 1%;
+    font-size: 48px;
+}
+.mainDescription {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    color: rgb(225, 225, 225, 1);
+}
+.mainWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2%;
+    margin: 0 30%;
+    max-width: 500px;
+    text-align: center;
+    row-gap: 30px;
+}
+.rightTree {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 500px;
+}
+.leftTree {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 620px;
+}
+.popularLogoFilters {
+    margin-top: 4%;
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    align-items: center;
+    column-gap: 32px;
+    justify-content: center;
+}
+a {
+    padding-left: 20px;
+}
+.buttonWrapperLeft,
+.buttonWrapperRight {
+    border: 1px#EEEEEE solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.buttonWrapperRight::before {
+    content: url("Filtr.png");
+}
+.buttonWrapperLeft::before {
+    content: url("triangle.png");
+}
+.logoPhoto {
+    width: 146px;
+    height: 128px;
+}
+.wrapperTovari {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    row-gap: 40px;
+    position: relative;
+}
+.rowDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.kartochkaBorder {
+    border: 1px solid white;
+    border-radius: 15px;
+    font-family: "Manrope", sans-serif;
+    max-width: 823px;
+}
+.twoDiva {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    column-gap: 20px;
+    min-width: 823px;
+}
+.flexLastDiv {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.greenButton {
+    background-color: #6f9f32;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.greenButton:hover {
+    background: #5b822c;
+}
+.greenButton:active {
+    background: #405c1b;
+}
+.greyButton {
+    background-color: #4c4c4c;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+.address,
+.cost {
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+}
+.addresss {
+    font-size: 24px;
+}
+.cost {
+    font-size: 48px;
+}
+
+.address::after {
+    content: url(info.png);
+    padding-left: 100px;
+}
+img {
+    border-radius: 15px;
+}
+.specialImage {
+    width: 367px;
+    height: 199px;
+}
+.ESTETIKA {
+    width: 367px;
+    height: 199px;
+}
+.lists {
+    font-family: "Manrope", sans-serif;
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    padding-bottom: 10%;
+}
+
+header {
+    background: url("../images/mainKatalog.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 50px;
+    position: relative;
+    height: 1000px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    color: rgb(225, 225, 225, 1);
+    column-gap: 80px;
+    margin-bottom: 80px;
+}
+.header-title {
+    font-size: 128px;
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    margin-bottom: 80px;
+}
+.header-subtitle {
+    background: linear-gradient(178.24deg, #eeeeee -40%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(10px 10px 10px #224534);
+    font-size: 48px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.header-text {
+    color: rgb(225, 225, 225, 1);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    text-align: center;
+}
+footer {
+    background: #1e1e1e;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+}
+.footer {
+    display: flex;
+    padding: 80px 0px 100px 0px;
+    justify-content: space-between;
+    column-gap: 32px;
+    flex-wrap: wrap;
+}
+.footer-block {
+    max-width: 45%;
+    background: linear-gradient(
+            0deg,
+            rgba(34, 2, 67, 0.54) -13.57%,
+            rgba(0, 0, 0, 0) 137.14%
+        ),
+        #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer-contacts-item {
+    display: flex;
+    column-gap: 8px;
+}
+.footer h3 {
+    margin-bottom: 32px;
+}
+.footer-nav-list,
+.footer-contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.footer-list-item:hover,
+.footer-contacts-item:hover,
+.header-link:hover {
+    background: #6f9f32;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer-list-item:active,
+.footer-contacts-item:active,
+.header-link:active {
+    background: #3b5718;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btn-overlay {
+    width: 100%;
+    height: 4000px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.btn-modal {
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    z-index: 100;
+    left: 44%;
+    margin-left: -270px;
+
+    top: 0;
+    background: #1e1e1e;
+    border-radius: 15px;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    padding: 40px 60px;
+    background-image: url(../images/2333.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modaltext {
+    background: linear-gradient(121.54deg, #eeeeee -36.02%, #12201b 178.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.btn-modal h2 {
+    background: linear-gradient(121.54deg, #eeeeee -36.02%, #12201b 178.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.btn-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+.feedback-content span {
+    background: linear-gradient(121.54deg, #eeeeee -36.02%, #12201b 178.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.feedback-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.feedback-content input {
+    opacity: 0.25;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 15px 0px 15px 20px;
+}
+.input-subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.7;
+}
+.feedback-content textarea {
+    opacity: 0.25;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.feedbtn {
+    background: #6f9f32;
+    /* Отзыв */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(18, 32, 27, 0.75);
+    border-radius: 15px;
+    padding: 15px 120px;
+}
+.feedbtn:hover {
+    background: #5b822c;
+}
+.feedbtn:active {
+    background: #405c1b;
+}
+.feedback h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+
+    text-align: center;
+
+    background: linear-gradient(188.32deg, #eeeeee -43.85%, #12201b 297.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+.btn-modal2 {
+    position: fixed;
+    z-index: 100;
+    left: 44%;
+    margin-left: -270px;
+    top: 40px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    width: 660px;
+    height: 90vh;
+    background-image: url(../images/228.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-modal2 h2 {
+    background: linear-gradient(178.24deg, #eeeeee -87%, #12201b 265.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    mix-blend-mode: normal;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 156px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
+.btn-modal2 span {
+    background: linear-gradient(121.54deg, #eeeeee -36.02%, #12201b 178.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 32px;
+}
+.modal2-content {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
