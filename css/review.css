@@ -447,3 +447,17 @@ footer {
         padding: 40px 0px;
     }
 }
+.omg {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    text-align: center;
+
+    background: linear-gradient(122.65deg, #eeeeee -36.3%, #12201b 287.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

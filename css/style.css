@@ -230,7 +230,7 @@ header {
 /* -------------------------------------------------------- */
 
 .picture {
-    height: 100vh;
+    height: 960px;
     background-image: url("../images/woman-picture.jpg");
     background-repeat: no-repeat;
     background-size: cover;

@@ -393,9 +393,24 @@ h1 {
     min-width: 430px;
     text-align: center;
 }
+.Otziv:hover {
+    background: #5b822c;
+}
+.Otziv:active {
+    background: #405c1b;
+}
 .bckButton {
     min-height: 500px;
     min-width: 985px;
     position: relative;
     background-image: url("../images/weird.png");
+}
+.vk {
+    cursor: pointer;
+}
+.vk {
+    transition: 0.2s;
+}
+.vk:hover {
+    transform: scale(1.2);
 }
